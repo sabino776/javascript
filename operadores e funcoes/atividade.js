@@ -9,7 +9,10 @@ function mostrarHoraAtual() {
 
 mostrarHoraAtual();
 
-function calcularNumeros(num1, num2) {
+function calcularNumeros() {
+    let num1 = parseFloat(prompt("Digite o primeiro número:"));
+    let num2 = parseFloat(prompt("Digite o segundo número:"));
+
     let soma = num1 + num2;
     let media = soma / 2;
 
@@ -17,16 +20,20 @@ function calcularNumeros(num1, num2) {
     console.log("Média:", media);
 }
 
-calcularNumeros(2, 2);
+calcularNumeros();
 
-function analisarNome(nome) {
+function analisarNome() {
+    let nome = prompt("Digite seu nome:");
+
     console.log("Quantidade de letras:", nome.length);
     console.log("Nome em maiúsculo:", nome.toUpperCase());
 }
 
-analisarNome("Vitor");
+analisarNome();
 
-function verificarHTML(frase) {
+function verificarHTML() {
+    let frase = prompt("Digite uma frase:");
+
     if (frase.toUpperCase().includes("HTML")) {
         console.log("A frase contém a palavra HTML");
     } else {
@@ -34,4 +41,4 @@ function verificarHTML(frase) {
     }
 }
 
-verificarHTML("Estou estudando HTML e CSS");
+verificarHTML();
